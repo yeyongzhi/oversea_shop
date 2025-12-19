@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // 从 /repo/path 重定向到 /repo/
+    const repo = window.location.pathname.split('/')[1];
+    window.location.replace(`/${repo}/`);
+  </script>
+</head>
+<body>
+  Redirecting to home...
+</body>
+</html>
